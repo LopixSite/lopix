@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="tr" data-theme="dark" data-i18n-title="title.faq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSS — LopiX</title>
+  <meta name="description" content="Sık sorulan sorular: SmartScreen uyarısı, uygulamaların güvenliği, kaynak kodu ve daha fazlası." data-i18n-attr="content:desc.faq">
+  <!-- SEO ve paylaşım önizlemesi. lopixsite.github.io yazan yerleri gerçek site adresiyle değiştir (README: "Site adresini yazmak") -->
+  <link rel="canonical" href="https://lopixsite.github.io/sss.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LopiX">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="SSS — LopiX">
+  <meta property="og:description" content="Sık sorulan sorular: SmartScreen uyarısı, uygulamaların güvenliği, kaynak kodu ve daha fazlası.">
+  <meta property="og:url" content="https://lopixsite.github.io/sss.html">
+  <meta property="og:image" content="https://lopixsite.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LopiX logosu ve &quot;Oyun ve yazılım projeleri&quot; yazısı">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#050607">
+  <script src="assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Pixelify+Sans:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="faq">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <div class="container page-head">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Yardım</p>
+        <h1 data-i18n="faq.title">Sık Sorulan Sorular</h1>
+        <p data-i18n="faq.lead">Merak edilenlerin cevapları burada.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq">
+          <!-- 1) SmartScreen: diğer sayfalardan sss.html#smartscreen ile doğrudan açılır -->
+          <details id="smartscreen" open>
+            <summary data-i18n="faq.q1">SmartScreen uyarısı neden çıkıyor? Uygulama güvenli mi?</summary>
+            <div class="faq__body">
+              <p data-i18n="faq.a1">Windows SmartScreen, dijital imzası olmayan veya henüz az kişi tarafından indirilmiş programlarda bu uyarıyı gösterir. Bu, programın zararlı olduğu anlamına gelmez: uygulamalarım tamamen açık kaynaklıdır, yani kodunu herkes inceleyebilir.</p>
+              <p><strong data-i18n="faq.stepsTitle">Uygulamayı çalıştırmak için:</strong></p>
+              <div class="steps">
+                <div class="step">
+                  <span class="step__label"><span data-i18n="ill.step">Adım</span> 1</span>
+                  <div class="mock" aria-hidden="true">
+                    <span class="mock__title"><span data-icon="info"></span><span data-i18n="ill.warning">Windows bilgisayarınızı korudu</span></span>
+                    <span class="mock__lines"><span></span><span></span></span>
+                    <span class="mock__link is-target" data-i18n="ill.more">Daha fazla bilgi</span>
+                    <span class="mock__actions"><span class="mock__btn" data-i18n="ill.dontRun">Çalıştırma</span></span>
+                  </div>
+                  <p data-i18n-html="faq.step1">Uyarı ekranında <strong>Daha fazla bilgi</strong> yazısına tıklayın.</p>
+                </div>
+                <div class="step">
+                  <span class="step__label"><span data-i18n="ill.step">Adım</span> 2</span>
+                  <div class="mock" aria-hidden="true">
+                    <span class="mock__title"><span data-icon="info"></span><span data-i18n="ill.warning">Windows bilgisayarınızı korudu</span></span>
+                    <span class="mock__lines"><span></span><span></span></span>
+                    <span class="mock__actions"><span class="mock__btn is-target" data-i18n="ill.run">Yine de çalıştır</span><span class="mock__btn" data-i18n="ill.dontRun">Çalıştırma</span></span>
+                  </div>
+                  <p data-i18n-html="faq.step2">Altta beliren <strong>Yine de çalıştır</strong> düğmesine tıklayın.</p>
+                </div>
+              </div>
+              <p data-i18n="faq.hash">İndirdiğiniz dosyanın orijinal olduğundan emin olmak isterseniz, proje kartındaki SHA-256 parmak izini dosyanınkiyle karşılaştırabilirsiniz.</p>
+            </div>
+          </details>
+
+          <details id="ucretsiz">
+            <summary data-i18n="faq.q2">Uygulamalar ücretsiz mi?</summary>
+            <div class="faq__body">
+              <p data-i18n="faq.a2">Evet. Bütün uygulamalarım ücretsizdir ve kaynak kodları açıktır.</p>
+            </div>
+          </details>
+
+          <details id="kaynak-kodu">
+            <summary data-i18n="faq.q3">Kaynak kodu nerede?</summary>
+            <div class="faq__body">
+              <p data-i18n-html="faq.a3">Her proje kartında bir <strong>Kaynak Kodu</strong> düğmesi var; sizi projenin GitHub sayfasına götürür.</p>
+            </div>
+          </details>
+
+          <details id="hata">
+            <summary data-i18n="faq.q4">Hata bulursam ne yapayım?</summary>
+            <div class="faq__body">
+              <p data-i18n-html="faq.a4">Projenin GitHub sayfasında bir “Issue” açabilir ya da <a href="iletisim.html">Bana Ulaşın</a> sayfasından yazabilirsiniz. Hatanın nasıl oluştuğunu anlatıp ekran görüntüsü eklerseniz çok yardımcı olur.</p>
+            </div>
+          </details>
+
+          <details id="isletim-sistemi">
+            <summary data-i18n="faq.q5">Uygulamalar hangi işletim sistemlerinde çalışıyor?</summary>
+            <div class="faq__body">
+              <p data-i18n="faq.a5">Her projenin desteklediği sistemler kendi kartında yazar. SmartScreen uyarısı yalnızca Windows'ta görülür.</p>
+            </div>
+          </details>
+
+          <details id="mehpix">
+            <summary data-i18n="faq.q6">MehPiX ile bağlantın ne?</summary>
+            <div class="faq__body">
+              <p data-i18n-html="faq.a6">MehPiX, içinde yer aldığım yazılım stüdyosu. Stüdyonun projeleri ve ekibi için <a href="https://mehpix.github.io" target="_blank" rel="noopener">MehPiX sitesine</a> göz atabilirsiniz.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="promo" style="margin-top: 48px">
+          <div>
+            <h2 data-i18n="faq.more">Sorunuzun cevabını bulamadınız mı?</h2>
+            <p data-i18n="faq.moreText">Bana yazmaktan çekinmeyin.</p>
+          </div>
+          <a class="btn btn--primary" href="iletisim.html"><span data-icon="mail"></span><span data-i18n="cta.contact">Bana ulaşın</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

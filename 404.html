@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr" data-theme="dark" data-i18n-title="title.404">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- GitHub Pages bu sayfayı olmayan HER adreste gösterir (örn. /a/b/c). Dosya yollarının
+       doğru çalışması için sayfaya site kökü (base) verilir.
+       SİTE KÖKÜ AYARI: site kullaniciadi.github.io ise '/', kullaniciadi.github.io/repo-adi ise '/repo-adi/'.
+       Dosyaya çift tıklayıp açınca kök, dosyanın bulunduğu klasör olur. -->
+  <script>(function(){var root='/';if(location.protocol==='file:')root=location.pathname.replace(/[^\/]*$/,'');var b=document.createElement('base');b.href=root;document.head.appendChild(b);})();</script>
+  <title>Sayfa bulunamadı — LopiX</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#050607">
+  <script src="assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Pixelify+Sans:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/game404.js" defer></script>
+</head>
+<body data-page="404">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <section class="container notfound">
+      <div class="pixel-text pixel-text--flicker" data-pixel="404" aria-label="404"></div>
+      <h1 data-i18n="404.title">Sayfa bulunamadı</h1>
+      <p data-i18n="404.text">Aradığınız sayfa kaybolmuş gibi görünüyor. Ana sayfaya dönebilir ya da hazır gelmişken bir el oynayabilirsiniz.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="index.html"><span data-icon="home"></span><span data-i18n="404.home">Ana sayfaya dön</span></a>
+        <a class="btn" href="projelerim.html" data-i18n="nav.projects">Projelerim</a>
+      </div>
+    </section>
+
+    <section class="container game-section">
+      <!-- Mini oyun: "Kayıp Sayfa Koşusu" (assets/js/game404.js) -->
+      <div class="game" data-state="ready" tabindex="0" role="group" aria-label="Mini oyun: LopiX hatalı piksellerin üstünden zıplıyor" data-i18n-attr="aria-label:game.label">
+        <canvas id="game" width="320" height="120" aria-hidden="true"></canvas>
+
+        <div class="game__hud" aria-hidden="true">
+          <span><span data-i18n="game.score">Skor</span> <b data-game-score>00000</b></span>
+          <span><span data-i18n="game.best">En iyi</span> <b data-game-best>00000</b></span>
+        </div>
+
+        <div class="game__overlay" aria-live="polite">
+          <p class="game__title" data-show="ready" data-i18n="game.name">Kayıp Sayfa Koşusu</p>
+          <p class="game__title" data-show="over" data-i18n="game.over">Oyun bitti!</p>
+          <p class="game__newbest" data-i18n="game.newBest">Yeni rekor!</p>
+          <p class="game__sub" data-show="ready" data-i18n="game.start">Başlamak için Boşluk'a basın ya da dokunun</p>
+          <p class="game__sub" data-show="over" data-i18n="game.restart">Tekrar oynamak için Boşluk'a basın ya da dokunun</p>
+        </div>
+      </div>
+      <p class="game__hint" data-i18n="game.hint">Zıpla: Boşluk / ↑ / dokun · Basılı tutunca daha yükseğe zıplar · Lime bitleri ekstra puan verir, uçan glitch'lerin altından geçin</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+﻿<!doctype html>
+<html lang="tr" data-theme="dark" data-i18n-title="title.projects">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projelerim — LopiX</title>
+  <meta name="description" content="LopiX'in geliştirdiği uygulamalar ve oyunlar. Hepsi ücretsiz ve açık kaynaklı." data-i18n-attr="content:desc.projects">
+  <!-- SEO ve paylaşım önizlemesi. lopixsite.github.io yazan yerleri gerçek site adresiyle değiştir (README: "Site adresini yazmak") -->
+  <link rel="canonical" href="https://lopixsite.github.io/projelerim.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LopiX">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Projelerim — LopiX">
+  <meta property="og:description" content="LopiX'in geliştirdiği uygulamalar ve oyunlar. Hepsi ücretsiz ve açık kaynaklı.">
+  <meta property="og:url" content="https://lopixsite.github.io/projelerim.html">
+  <meta property="og:image" content="https://lopixsite.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LopiX logosu ve &quot;Oyun ve yazılım projeleri&quot; yazısı">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#050607">
+  <script src="assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Pixelify+Sans:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <div class="container page-head">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="projects.eyebrow">Projeler</p>
+        <h1 data-i18n="nav.projects">Projelerim</h1>
+        <p data-i18n="projects.lead">Geliştirdiğim uygulamalar ve oyunlar. Hepsi ücretsiz ve açık kaynaklı.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice">
+          <span data-icon="info"></span>
+          <div class="stack">
+            <strong data-i18n="smartscreen.title">Kurulumda SmartScreen uyarısı çıkabilir</strong>
+            <p data-i18n-html="smartscreen.text">Korkmayın; uygulamalarım tamamen açık kaynaklı ve güvenlidir. Ne yapmanız gerektiğini <a href="sss.html#smartscreen">SSS sayfasında</a> adım adım anlattım.</p>
+          </div>
+        </div>
+
+        <!--
+          YENİ PROJE KARTI NASIL EKLENİR?
+          Aşağıdaki şablonu kopyalayıp ilgili bölümün <div class="grid project-grid"> etiketinin içine yapıştır.
+          Kart eklenince o bölümdeki "Yakında" kutusu kendiliğinden kaybolur.
+          - Logo: assets/img/ klasörüne 256x256 boyutunda koy
+          - İndir: https://github.com/<kullanıcı>/<repo>/releases/download/<etiket>/<dosya>
+          - Sürüm Notları: https://github.com/<kullanıcı>/<repo>/releases/tag/<etiket>
+          - SHA-256: PowerShell'de  Get-FileHash dosya.exe  komutuyla bulunur
+          - Kararsız bir proje için <article> etiketine "card--taped" sınıfı ve içine
+            <div class="tape" data-tape aria-hidden="true"></div> ekle
+
+          <article class="card">
+            <div class="card__head">
+              <img class="card__logo" src="assets/img/PROJE-LOGO.png" alt="" width="64" height="64">
+              <div>
+                <h3>Proje Adı</h3>
+                <p class="card__meta">v1.0.0 · Windows</p>
+              </div>
+            </div>
+            <span class="badge badge--ready" data-i18n="badge.ready">Hazır</span>
+            <p>Projenin kısa açıklaması.</p>
+            <code class="hash">SHA-256: ...</code>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--sm" href="İNDİRME-LİNKİ"><span data-icon="download"></span><span data-i18n="projects.download">İndir</span></a>
+              <a class="btn btn--sm" href="KAYNAK-KODU-LİNKİ" target="_blank" rel="noopener"><span data-icon="code"></span><span data-i18n="projects.source">Kaynak Kodu</span></a>
+              <a class="btn btn--quiet btn--sm" href="SÜRÜM-NOTLARI-LİNKİ" target="_blank" rel="noopener"><span data-icon="notes"></span><span data-i18n="projects.notes">Sürüm Notları</span></a>
+            </div>
+          </article>
+        -->
+
+        <div class="project-section" style="margin-top: 48px">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="projects.ready">Hazır Projeler</h2>
+            <p data-i18n="projects.readyText">İndirip hemen kullanabileceğiniz projeler.</p>
+          </div>
+          <div class="grid project-grid">
+            <article class="card">
+              <div class="card__head">
+                <img class="card__logo" src="assets/img/lopixai-icon.png" alt="LopixAI" width="64" height="64">
+                <div>
+                  <h3>LopixAI</h3>
+                  <p class="card__meta">v0.1.0 · Windows 10/11</p>
+                </div>
+              </div>
+              <span class="badge badge--ready" data-i18n="badge.ready">Hazır</span>
+              <p data-i18n="projects.lopixai.desc">Windows için yerel ve akıllı masaüstü yapay zeka asistanı. Gemini API entegrasyonu, çevrimdışı komut modu, DPAPI şifreli kasa ve ChatGPT tarzı modern arayüz.</p>
+              <code class="hash">SHA-256: 8D41BFD57CEA062252A31CA542FD4C2C64E6B6ABA977402652A2F765E021C43B</code>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="https://github.com/LopixSite/LopixAI/releases" target="_blank" rel="noopener"><span data-icon="download"></span><span data-i18n="projects.download">İndir</span></a>
+                <a class="btn btn--sm" href="https://github.com/LopixSite/LopixAI" target="_blank" rel="noopener"><span data-icon="code"></span><span data-i18n="projects.source">Kaynak Kodu</span></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__head">
+                <img class="card__logo" src="assets/img/ggbox-icon.png" alt="GGBox Launcher" width="64" height="64">
+                <div>
+                  <h3>GGBox Launcher</h3>
+                  <p class="card__meta">v0.31.0 · Win / Linux / macOS</p>
+                </div>
+              </div>
+              <span class="badge badge--ready" data-i18n="badge.ready">Hazır</span>
+              <p data-i18n="projects.ggbox.desc">Tauri, Rust ve React ile geliştirilmiş yeni nesil, yüksek performanslı, 3D canlı skin önizleyicili ve açık kaynak Minecraft başlatıcısı.</p>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="https://ggboxmc.github.io" target="_blank" rel="noopener"><span data-icon="external"></span><span data-i18n="projects.visit">Siteye Git / İndir</span></a>
+                <a class="btn btn--sm" href="https://github.com/ggboxmc/ggboxmc.github.io" target="_blank" rel="noopener"><span data-icon="code"></span><span data-i18n="projects.source">Kaynak Kodu</span></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__head">
+                <img class="card__logo" src="assets/img/hardmod-icon.png" alt="HardMod" width="64" height="64">
+                <div>
+                  <h3>HardMod</h3>
+                  <p class="card__meta">v1.0.0 · Fabric MC 1.21+</p>
+                </div>
+              </div>
+              <span class="badge badge--ready" data-i18n="badge.ready">Hazır</span>
+              <p data-i18n="projects.hardmod.desc">Minecraft ekstrem hayatta kalma modu: Sonsuz gece, çöl dünyası, patlayan yataklar, ölümcül mob güçlendirmeleri ve acımasız lanetler.</p>
+              <div class="card__actions">
+                <a class="btn btn--sm" href="https://github.com/LopixSite/HardMod" target="_blank" rel="noopener"><span data-icon="code"></span><span data-i18n="projects.source">Kaynak Kodu</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state">
+            <span class="empty-state__icon" data-icon="box"></span>
+            <h3 data-i18n="projects.emptyReady">Henüz hazır proje yok</h3>
+            <p data-i18n="projects.emptyText">Yeni projeler eklendikçe bu bölümde görünecek.</p>
+            <span class="badge badge--soon" data-i18n="badge.soon">Yakında</span>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="projects.wip">Üzerinde Çalıştığım Projeler</h2>
+            <p data-i18n="projects.wipText">Henüz geliştirme aşamasında olan projeler.</p>
+          </div>
+          <div class="grid project-grid">
+            <article class="card card--taped">
+              <div class="tape" data-tape aria-hidden="true"></div>
+              <div class="card__head">
+                <img class="card__logo" src="assets/img/trollgolem-icon.png" alt="Troll Golem Mod" width="64" height="64">
+                <div>
+                  <h3>Troll Golem Mod</h3>
+                  <p class="card__meta">v1.0.0 (Beta) · Fabric MC 1.21+</p>
+                </div>
+              </div>
+              <span class="badge badge--wip" data-i18n="badge.wip">Geliştiriliyor</span>
+              <p data-i18n="projects.trollgolem.desc">3 blok kule yapıp saldıran oyuncuları cezalandıran, demir rüşvetini kabul eden ve zekice intikam alan akıllı Demir Golem Fabric modu.</p>
+              <code class="hash">SHA-256: 5C22BA63D419CC56771A2E88F318725770A4DD7E6C3F97BDE849884FB52ACF9B</code>
+              <div class="card__actions">
+                <a class="btn btn--sm" href="https://github.com/LopixSite/TrollGolemMod" target="_blank" rel="noopener"><span data-icon="code"></span><span data-i18n="projects.source">Kaynak Kodu</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state">
+            <span class="empty-state__icon" data-icon="code"></span>
+            <h3 data-i18n="projects.emptyWip">Şu an burada bir şey yok</h3>
+            <p data-i18n="projects.emptyText">Yeni projeler eklendikçe bu bölümde görünecek.</p>
+            <span class="badge badge--soon" data-i18n="badge.soon">Yakında</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

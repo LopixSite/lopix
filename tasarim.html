@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasarım Vitrini — LopiX</title>
+  <!-- Bu sayfa sadece geliştirme içindir: bileşenlerin nasıl göründüğünü gösterir -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#050607">
+  <!-- Seçilen tema ve dil sayfa çizilmeden önce uygulanır (yanıp sönme olmasın) -->
+  <script src="assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Pixelify+Sans:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <style>
+    /* Sadece bu vitrin sayfasına özel küçük stiller */
+    .swatches { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .swatch { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+    .swatch span { display: block; height: 64px; }
+    .swatch code { display: block; padding: 8px 10px; font-family: var(--font-mono); font-size: .75rem; color: var(--text-muted); }
+    .demo-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .demo-logos { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+    .demo-block + .demo-block { margin-top: 56px; }
+    .demo-block > h2 { margin-bottom: 20px; }
+    .demo-note { margin-top: 10px; color: var(--text-muted); font-size: .9rem; }
+  </style>
+</head>
+<body data-page="design">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Faz 1 · Faz 2</p>
+        <h1>Tasarım <span class="hl">Vitrini</span></h1>
+        <p>Sitenin bütün yapı taşları bu sayfada. Sağ üstteki düğmelerle temayı ve dili değiştirerek görünümü kontrol edebilirsin.</p>
+      </div>
+
+      <!-- Dil sistemi -->
+      <section class="demo-block">
+        <h2 class="section-title">Dil sistemi</h2>
+        <div class="stack">
+          <p>Menü ve alt bilgi 17 dilin hepsine çevrildi. Dil seçiciden Arapçayı seçince sayfa sağdan sola döner.
+            Sayfa içerikleri Faz 3'te (TR + EN) ve Faz 5'te (diğer 15 dil) çevrilecek.</p>
+          <div class="notice">
+            <span data-icon="globe"></span>
+            <div class="stack">
+              <strong>Yedek dil örneği</strong>
+              <p data-i18n="demo.fallback">Bu cümlenin sadece İngilizce çevirisi var: Türkçe ve İngilizce dışındaki bütün dillerde İngilizcesi görünür (yedek dil).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Logo -->
+      <section class="demo-block">
+        <h2 class="section-title">Logo</h2>
+        <div class="demo-logos">
+          <div class="logo-frame">
+            <img src="assets/img/lopix-logo.jpg" alt="LopiX logosu" width="640" height="640">
+          </div>
+          <div class="pixel-text pixel-text--flicker" data-pixel="LPX"></div>
+        </div>
+        <p class="demo-note">Solda LopiX'in logosu, sağda kodla çizilen pixel LPX (404 sayfası ve süslemeler için).</p>
+      </section>
+
+      <!-- Renkler -->
+      <section class="demo-block">
+        <h2 class="section-title">Renkler</h2>
+        <div class="swatches">
+          <div class="swatch"><span style="background:var(--bg)"></span><code>--bg</code></div>
+          <div class="swatch"><span style="background:var(--surface)"></span><code>--surface</code></div>
+          <div class="swatch"><span style="background:var(--border)"></span><code>--border</code></div>
+          <div class="swatch"><span style="background:var(--text)"></span><code>--text</code></div>
+          <div class="swatch"><span style="background:var(--text-muted)"></span><code>--text-muted</code></div>
+          <div class="swatch"><span style="background:var(--lime)"></span><code>--lime</code></div>
+          <div class="swatch"><span style="background:var(--lime-bright)"></span><code>--lime-bright</code></div>
+          <div class="swatch"><span style="background:var(--lime-deep)"></span><code>--lime-deep</code></div>
+          <div class="swatch"><span style="background:var(--accent-text)"></span><code>--accent-text</code></div>
+          <div class="swatch"><span style="background:var(--tape)"></span><code>--tape</code></div>
+        </div>
+      </section>
+
+      <!-- Yazı tipleri -->
+      <section class="demo-block">
+        <h2 class="section-title">Yazı tipleri</h2>
+        <div class="stack">
+          <p class="eyebrow" lang="en">Pixelify Sans · Exo 2 · Inter · JetBrains Mono</p>
+          <h1>Başlık 1 — Oyun ve <span class="hl">yazılım</span></h1>
+          <h2>Başlık 2 — Projelerim</h2>
+          <h3>Başlık 3 — Kart başlığı</h3>
+          <p>Gövde metni: Merhaba, ben LopiX! İlgi alanlarım ağırlıklı olarak oyun ve yazılım. Geliştirdiğim projelere sitemin Projelerim bölümünden göz atabilirsiniz.</p>
+          <p class="card__meta">v1.0.0 · Windows · 12 MB</p>
+        </div>
+      </section>
+
+      <!-- Düğmeler -->
+      <section class="demo-block">
+        <h2 class="section-title">Düğmeler</h2>
+        <div class="demo-row">
+          <a class="btn btn--primary" href="#"><span data-icon="download"></span>İndir</a>
+          <a class="btn" href="#"><span data-icon="code"></span>Kaynak Kodu</a>
+          <a class="btn btn--quiet" href="#"><span data-icon="notes"></span>Sürüm Notları</a>
+          <a class="btn btn--primary btn--sm" href="#">Küçük</a>
+          <a class="btn btn--sm" href="#">Küçük çerçeveli</a>
+          <button class="btn btn--primary" type="button" disabled>Kapalı</button>
+        </div>
+      </section>
+
+      <!-- Rozetler -->
+      <section class="demo-block">
+        <h2 class="section-title">Rozetler</h2>
+        <div class="demo-row">
+          <span class="badge badge--ready">Hazır</span>
+          <span class="badge badge--wip">Geliştiriliyor</span>
+          <span class="badge badge--soon">Yakında</span>
+        </div>
+      </section>
+
+      <!-- Kartlar -->
+      <section class="demo-block">
+        <h2 class="section-title">Kartlar</h2>
+        <div class="grid">
+          <a class="card" href="#">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <p class="eyebrow">Bölüm kartı</p>
+            <h3>Projelerim</h3>
+            <p>Ana sayfadaki bölüm kartları böyle görünür; üzerine gelince yükselir ve parlar.</p>
+          </a>
+
+          <article class="card">
+            <div class="card__head">
+              <img class="card__logo" src="assets/img/lopix-logo-sm.jpg" alt="" width="64" height="64">
+              <div>
+                <h3>Örnek Uygulama</h3>
+                <p class="card__meta">v1.0.0 · Windows</p>
+              </div>
+            </div>
+            <span class="badge badge--ready">Hazır</span>
+            <p>Proje kartı: logo, sürüm, kısa açıklama, indirme ve kaynak kodu düğmeleri.</p>
+            <code class="hash">SHA-256: 3f2a9c…e81b (örnek)</code>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--sm" href="#"><span data-icon="download"></span>İndir</a>
+              <a class="btn btn--sm" href="#"><span data-icon="code"></span>Kaynak Kodu</a>
+            </div>
+          </article>
+
+          <article class="card card--taped">
+            <div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL</div>
+            <div class="card__head">
+              <img class="card__logo" src="assets/img/lopix-logo-sm.jpg" alt="" width="64" height="64">
+              <div>
+                <h3>Deneysel Proje</h3>
+                <p class="card__meta">v0.1.0 · Geliştiriliyor</p>
+              </div>
+            </div>
+            <span class="badge badge--wip">Geliştiriliyor</span>
+            <p>Henüz kararlı olmayan projeler bu polis bandıyla gösterilir.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Boş durum -->
+      <section class="demo-block">
+        <h2 class="section-title">Boş durum</h2>
+        <div class="empty-state">
+          <span class="empty-state__icon" data-icon="box"></span>
+          <h3>Projeler yakında burada</h3>
+          <p>Henüz paylaşılmış bir proje yok. Yeni projeler eklendikçe bu bölümde görünecek.</p>
+          <span class="badge badge--soon">Yakında</span>
+        </div>
+      </section>
+
+      <!-- Bilgi kutusu -->
+      <section class="demo-block">
+        <h2 class="section-title">Bilgi kutusu</h2>
+        <div class="notice">
+          <span data-icon="info"></span>
+          <div class="stack">
+            <strong>SmartScreen uyarısı çıkarsa korkmayın</strong>
+            <p>Uygulamalarım tamamen açık kaynaklı ve güvenlidir. Uyarı ekranında "Daha fazla bilgi" ve ardından "Yine de çalıştır" seçeneğine tıklayabilirsiniz.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SSS -->
+      <section class="demo-block">
+        <h2 class="section-title">SSS (açılır-kapanır)</h2>
+        <div class="faq">
+          <details open>
+            <summary>SmartScreen uyarısı neden çıkıyor?</summary>
+            <div class="faq__body">
+              <p>Windows, imzasız veya az indirilmiş programlarda bu uyarıyı gösterir. Bu, programın zararlı olduğu anlamına gelmez.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Uygulamalar ücretsiz mi?</summary>
+            <div class="faq__body">
+              <p>Evet, bütün uygulamalar ücretsiz ve açık kaynaklıdır.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section class="demo-block">
+        <h2 class="section-title">Form alanları</h2>
+        <form class="form" onsubmit="return false">
+          <div class="form-row">
+            <div class="field">
+              <label for="demo-name">Adınız</label>
+              <input id="demo-name" type="text" placeholder="Örn. Ali">
+            </div>
+            <div class="field">
+              <label for="demo-mail">E-posta</label>
+              <input id="demo-mail" type="email" placeholder="ornek@mail.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="demo-msg">Mesajınız</label>
+            <textarea id="demo-msg" placeholder="Mesajınızı yazın…"></textarea>
+          </div>
+          <div class="demo-row">
+            <button class="btn btn--primary" type="submit"><span data-icon="mail"></span>Gönder</button>
+            <p class="form-status" data-state="success">Örnek başarı mesajı</p>
+            <p class="form-status" data-state="error">Örnek hata mesajı</p>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sosyal medya -->
+      <section class="demo-block">
+        <h2 class="section-title">Sosyal medya kartları</h2>
+        <div class="grid">
+          <a class="card social-card" href="https://www.youtube.com/@Lopixlondrus" target="_blank" rel="noopener">
+            <span class="social-card__icon"><span data-icon="youtube"></span></span>
+            <span class="social-card__text"><strong>YouTube</strong><span>@Lopixlondrus</span></span>
+          </a>
+          <a class="card social-card" href="https://mehpix.github.io" target="_blank" rel="noopener">
+            <span class="social-card__icon"><span data-icon="external"></span></span>
+            <span class="social-card__text"><strong>MehPiX</strong><span>mehpix.github.io</span></span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

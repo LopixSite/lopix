@@ -1,0 +1,11 @@
+﻿# Arama motorlarına izin verilen sayfalar: hepsi.
+# tasarim.html ve 404.html engellenmez; ikisi de sayfa içindeki "noindex" etiketiyle
+# arama sonuçlarının dışında tutulur (engellenirse arama motoru o etiketi göremez).
+User-agent: *
+Allow: /
+
+# Site adresi belli olunca aşağıdaki satırı gerçek adresle güncelle
+# (README: "Site adresini yazmak"). Not: robots.txt yalnızca sitenin kök adresinde
+# (kullaniciadi.github.io/robots.txt) okunur; site kullaniciadi.github.io/repo-adi
+# gibi bir alt klasördeyse bu dosya işe yaramaz, sitemap'i Google Search Console'dan bildir.
+Sitemap: https://lopixsite.github.io/sitemap.xml

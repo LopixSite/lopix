@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="tr" data-theme="dark" data-i18n-title="title.home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LopiX — Oyun ve yazılım projeleri</title>
+  <meta name="description" content="LopiX'in kişisel sitesi: oyun ve yazılım projeleri, hakkımda, sık sorulan sorular, iletişim ve sosyal medya." data-i18n-attr="content:desc.home">
+  <!-- SEO ve paylaşım önizlemesi. lopixsite.github.io yazan yerleri gerçek site adresiyle değiştir (README: "Site adresini yazmak") -->
+  <link rel="canonical" href="https://lopixsite.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LopiX">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="LopiX — Oyun ve yazılım projeleri">
+  <meta property="og:description" content="LopiX'in kişisel sitesi: oyun ve yazılım projeleri, hakkımda, sık sorulan sorular, iletişim ve sosyal medya.">
+  <meta property="og:url" content="https://lopixsite.github.io/">
+  <meta property="og:image" content="https://lopixsite.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LopiX logosu ve &quot;Oyun ve yazılım projeleri&quot; yazısı">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Arama motorları için yapılandırılmış veri: site ve LopiX hakkında (sosyal hesap eklenince sameAs listesine de ekle) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://lopixsite.github.io/#website",
+        "name": "LopiX",
+        "url": "https://lopixsite.github.io/",
+        "inLanguage": "tr",
+        "publisher": {
+          "@id": "https://lopixsite.github.io/#lopix"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://lopixsite.github.io/#lopix",
+        "name": "LopiX",
+        "url": "https://lopixsite.github.io/",
+        "image": "https://lopixsite.github.io/assets/img/lopix-logo.jpg",
+        "memberOf": {
+          "@type": "Organization",
+          "name": "MehPiX",
+          "url": "https://mehpix.github.io"
+        },
+        "sameAs": [
+          "https://www.youtube.com/@Lopixlondrus"
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#050607">
+  <!-- Seçilen tema ve dil sayfa çizilmeden önce uygulanır (yanıp sönme olmasın) -->
+  <script src="assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Pixelify+Sans:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <!-- Giriş -->
+    <section class="container hero">
+      <div>
+        <p class="eyebrow" data-i18n="home.eyebrow">Oyun · Yazılım</p>
+        <h1 data-i18n-html="home.title">Merhaba, ben <span class="hl">LopiX</span></h1>
+        <p class="hero__lead" data-i18n="home.lead">Oyun ve yazılım projeleri geliştiriyorum. Burada projelerime göz atabilir, beni tanıyabilir ve bana ulaşabilirsiniz.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="projelerim.html"><span data-icon="box"></span><span data-i18n="cta.projects">Projelerime göz at</span></a>
+          <a class="btn" href="ben-kimim.html" data-i18n="home.whoBtn">Ben kimim?</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="logo-frame">
+          <img src="assets/img/lopix-logo.jpg" alt="LopiX logosu" data-i18n-attr="alt:alt.logo" width="640" height="640">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bölüm kartları -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="home.explore">Keşfet</h2>
+          <p data-i18n="home.exploreText">Sitede neler var?</p>
+        </div>
+        <div class="grid">
+          <a class="card" href="projelerim.html">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <h3 data-i18n="nav.projects">Projelerim</h3>
+            <p data-i18n="home.card.projects">Hazır projelerim ve üzerinde çalıştıklarım.</p>
+          </a>
+          <a class="card" href="ben-kimim.html">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <h3 data-i18n="nav.about">Ben Kimim</h3>
+            <p data-i18n="home.card.about">Kimim, nelerle ilgileniyorum?</p>
+          </a>
+          <a class="card" href="sss.html">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <h3 data-i18n="nav.faq">SSS</h3>
+            <p data-i18n="home.card.faq">SmartScreen uyarısı ve merak edilen diğer sorular.</p>
+          </a>
+          <a class="card" href="iletisim.html">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <h3 data-i18n="nav.contact">Bana Ulaşın</h3>
+            <p data-i18n="home.card.contact">Soru, öneri veya iş birliği için yazın.</p>
+          </a>
+          <a class="card" href="sosyal-medya.html">
+            <span class="card__arrow" data-icon="arrow"></span>
+            <h3 data-i18n="nav.social">Sosyal Medya</h3>
+            <p data-i18n="home.card.social">YouTube kanalım ve diğer hesaplarım.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MehPiX -->
+    <section class="section">
+      <div class="container">
+        <div class="promo">
+          <div>
+            <p class="eyebrow" data-i18n="mehpix.eyebrow">Ekibim</p>
+            <h2>MehPiX</h2>
+            <p data-i18n="mehpix.text">MehPiX, içinde yer aldığım yazılım stüdyosu. Stüdyonun projelerine ve ekibine göz atın.</p>
+          </div>
+          <a class="btn btn--primary" href="https://mehpix.github.io" target="_blank" rel="noopener"><span data-icon="external"></span><span data-i18n="cta.visit">Siteye Git</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>
